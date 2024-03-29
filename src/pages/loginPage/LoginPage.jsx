@@ -3,7 +3,13 @@ import { useFormik } from 'formik';
 import React from 'react';
 import * as yup from 'yup';
 import { userSer } from '../../service/userSer';
+import { useDispatch } from 'react-redux';
+import { loginThunk } from '../../redux/userReducer/userThunk';
+import { useNavigate } from 'react-router-dom';
+import { message } from 'antd';
 const LoginPage = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const formLogin = useFormik({
     initialValues: {
       taiKhoan: '',
@@ -11,13 +17,10 @@ const LoginPage = () => {
     },
 
     onSubmit: async (value) => {
-      try {
-        const data = await userSer.postLogin(value);
-
-        console.log('data', data);
-      } catch (error) {
-        console.log('error: ', error);
-      }
+      dispatch(loginThunk(value)).then(() => {
+        message.success('Đăng nhập thành công');
+        navigate('/');
+      });
     },
     validationSchema: yup.object().shape({
       taiKhoan: yup
