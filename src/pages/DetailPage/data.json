@@ -1,0 +1,118 @@
+{
+    "heThongRapChieu": [
+      {
+        "cumRapChieu": [
+          {
+            "lichChieuPhim": [
+              {
+                "maLichChieu": "47498",
+                "maRap": "554",
+                "tenRap": "Rạp 4",
+                "ngayChieuGioChieu": "2024-01-10T00:00:00",
+                "giaVe": 100000,
+                "thoiLuong": 120
+              },
+              {
+                "maLichChieu": "47508",
+                "maRap": "553",
+                "tenRap": "Rạp 3",
+                "ngayChieuGioChieu": "2024-01-10T00:00:00",
+                "giaVe": 90000,
+                "thoiLuong": 120
+              }
+            ],
+            "maCumRap": "cgv-ct-plaza",
+            "tenCumRap": "CGV - CT Plaza",
+            "hinhAnh": "https://s3img.vcdn.vn/123phim/2021/01/bhd-star-bitexco-16105952137769.png",
+            "diaChi": "60A Trường Sơn,P. 2, Tân Bình"
+          },
+          {
+            "lichChieuPhim": [
+              {
+                "maLichChieu": "47498",
+                "maRap": "554",
+                "tenRap": "Rạp 4",
+                "ngayChieuGioChieu": "2024-01-10T00:00:00",
+                "giaVe": 100000,
+                "thoiLuong": 120
+              },
+              {
+                "maLichChieu": "47508",
+                "maRap": "553",
+                "tenRap": "Rạp 3",
+                "ngayChieuGioChieu": "2024-01-10T00:00:00",
+                "giaVe": 90000,
+                "thoiLuong": 120
+              }
+            ],
+            "maCumRap": "cgv-ct-plaza",
+            "tenCumRap": "CGV - CT Plaza",
+            "hinhAnh": "https://s3img.vcdn.vn/123phim/2021/01/bhd-star-bitexco-16105952137769.png",
+            "diaChi": "60A Trường Sơn,P. 2, Tân Bình"
+          }
+        ],
+        "maHeThongRap": "CGV",
+        "tenHeThongRap": "cgv",
+        "logo": "https://movienew.cybersoft.edu.vn/hinhanh/cgv.png"
+      },
+      {
+        "cumRapChieu": [
+          {
+            "lichChieuPhim": [
+              {
+                "maLichChieu": "47499",
+                "maRap": "809",
+                "tenRap": "Rạp 9",
+                "ngayChieuGioChieu": "2024-01-10T00:00:00",
+                "giaVe": 100000,
+                "thoiLuong": 120
+              }
+            ],
+            "maCumRap": "glx-tan-binh",
+            "tenCumRap": "GLX - Tân Bình",
+            "hinhAnh": "https://s3img.vcdn.vn/123phim/2021/01/bhd-star-bitexco-16105952137769.png",
+            "diaChi": "246 Nguyễn Hồng Đào, Tân Bình"
+          },
+          {
+            "lichChieuPhim": [
+              {
+                "maLichChieu": "47500",
+                "maRap": "819",
+                "tenRap": "Rạp 9",
+                "ngayChieuGioChieu": "2024-01-10T00:00:00",
+                "giaVe": 100000,
+                "thoiLuong": 120
+              },
+              {
+                "maLichChieu": "47552",
+                "maRap": "815",
+                "tenRap": "Rạp 5",
+                "ngayChieuGioChieu": "2024-03-16T12:33:20",
+                "giaVe": 75000,
+                "thoiLuong": 120
+              }
+            ],
+            "maCumRap": "glx-trung-chanh",
+            "tenCumRap": "GLX - Trung Chánh",
+            "hinhAnh": "https://s3img.vcdn.vn/123phim/2021/01/bhd-star-bitexco-16105952137769.png",
+            "diaChi": "TTVH Q12 – 09, Q L 22, Trung Mỹ Tây , Q.12"
+          }
+        ],
+        "maHeThongRap": "Galaxy",
+        "tenHeThongRap": "Galaxy Cinema",
+        "logo": "https://movienew.cybersoft.edu.vn/hinhanh/galaxy-cinema.png"
+      }
+    ],
+    "maPhim": 13677,
+    "tenPhim": "The Creator1",
+    "biDanh": "the-creator1",
+    "trailer": "https://www.youtube.com/watch?v=t2yj_eLpVXU&t=1s",
+    "hinhAnh": "https://movienew.cybersoft.edu.vn/hinhanh/the-creator_gp09.jpg",
+    "moTa": "Phim lấy bối cảnh tương lai, khi loài người đang phải chiến đấu với trí tuệ nhân tạo (AI). Joshua (John David Washington) là một cựu đặc vụ được thuê để giết \"The Creator\", kẻ được xem là đầu não của AI và đã tạo ra một loại vũ khí bí ẩn đủ mạnh để kết thúc cuộc chiến và quét sạch nhân loại",
+    "maNhom": "GP09",
+    "hot": true,
+    "dangChieu": true,
+    "sapChieu": true,
+    "ngayKhoiChieu": "2024-01-31T00:00:00",
+    "danhGia": 10
+  }
