@@ -54,7 +54,7 @@ const ListMoive = () => {
     <div className="container mx-auto py-5">
       <h3 className="text-xl font-medium">Danh sách phim</h3>
       {/* Danh sách phim */}
-      <div className="grid grid-cols-4 gap-9">
+      <div className="grid grid-cols-1 sm:grid-cols-4 gap-9">
         {/* card phim */}
         {renderListMovies()}
       </div>
