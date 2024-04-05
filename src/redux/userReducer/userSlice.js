@@ -27,12 +27,12 @@ const userSlice = createSlice({
           state.infoUser = action.payload;
           //Lưu info user xuống localstorage
           userLocal.set(action.payload);
-        } else {
-          message.error('Đăng nhập thất bại');
         }
       })
       .addCase(loginThunk.pending, (state, action) => {})
-      .addCase(loginThunk.rejected, (state, action) => {});
+      .addCase(loginThunk.rejected, (state, action) => {
+        console.log('thất bại');
+      });
   },
 });
 

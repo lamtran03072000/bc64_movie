@@ -17,12 +17,10 @@ const LoginPage = () => {
     },
 
     onSubmit: (value) => {
-      dispatch(loginThunk(value))
-        .unwarp()
-        .then(() => {
-          message.success('Đăng nhập thành công');
-          navigate('/');
-        });
+      const navigateCus = () => {
+        navigate('/');
+      };
+      dispatch(loginThunk({ value, navigateCus }));
     },
     validationSchema: yup.object().shape({
       taiKhoan: yup
