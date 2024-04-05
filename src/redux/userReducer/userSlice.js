@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { loginThunk } from './userThunk';
 import { userLocal } from '../../service/userLocal';
+import { message } from 'antd';
 
 const initialState = {
   infoUser: userLocal.get(),
@@ -22,9 +23,13 @@ const userSlice = createSlice({
     // fulfilled : Thành công , pending : chờ , rejected : thất bại
     builder
       .addCase(loginThunk.fulfilled, (state, action) => {
-        state.infoUser = action.payload;
-        //Lưu info user xuống localstorage
-        userLocal.set(action.payload);
+        if (action.payload) {
+          state.infoUser = action.payload;
+          //Lưu info user xuống localstorage
+          userLocal.set(action.payload);
+        } else {
+          message.error('Đăng nhập thất bại');
+        }
       })
       .addCase(loginThunk.pending, (state, action) => {})
       .addCase(loginThunk.rejected, (state, action) => {});

@@ -16,11 +16,13 @@ const LoginPage = () => {
       matKhau: '',
     },
 
-    onSubmit: async (value) => {
-      dispatch(loginThunk(value)).then(() => {
-        message.success('Đăng nhập thành công');
-        navigate('/');
-      });
+    onSubmit: (value) => {
+      dispatch(loginThunk(value))
+        .unwarp()
+        .then(() => {
+          message.success('Đăng nhập thành công');
+          navigate('/');
+        });
     },
     validationSchema: yup.object().shape({
       taiKhoan: yup

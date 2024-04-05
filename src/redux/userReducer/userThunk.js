@@ -7,9 +7,11 @@ export const loginThunk = createAsyncThunk(
     try {
       const data = await userSer.postLogin(payload);
       let infoUser = data.data.content;
+      console.log('infoUser: ', infoUser);
       return infoUser;
     } catch (error) {
       console.log('error: ', error);
+      rejectWithValue(error);
     }
   },
 );

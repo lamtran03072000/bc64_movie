@@ -14,16 +14,11 @@ const DetailPage = () => {
   const { idMovie } = useParams();
   const dispatch = useDispatch();
   const fetchDetailMovie = async () => {
-    dispatch(turnOnLoading());
     try {
       let data = await movieSer.getDetailMovie(idMovie);
       setDataMovie(data.data.content);
-      setTimeout(() => {
-        dispatch(turnOffLoading());
-      }, 3000);
     } catch (error) {
       console.log('error: ', error);
-      dispatch(turnOffLoading());
     }
   };
   useEffect(() => {
