@@ -11,17 +11,27 @@ import HomePage from './pages/HomePage/HomePage';
 import DetailPage from './pages/DetailPage/DetailPage';
 import ScreenPage from './pages/ScreenPage/ScreenPage';
 import Loading from './components/Loading/Loading';
+import CheckUser from './HOC/CheckUser';
+import Reponsive from './components/DemoReponsive/Reponsive';
 
 function App() {
   return (
     <BrowserRouter>
       <Loading />
+      <Reponsive />
       <Routes>
         {/* home template */}
         <Route path="" element={<HomeTemplate />}>
           <Route index element={<HomePage />} />
           <Route path="detail-movie/:idMovie" element={<DetailPage />} />
-          <Route path="screen/:maLichChieu" element={<ScreenPage />} />
+          <Route
+            path="screen/:maLichChieu"
+            element={
+              <CheckUser>
+                <ScreenPage />
+              </CheckUser>
+            }
+          />
         </Route>
         {/* auth template */}
         <Route path="/auth" element={<AuthTemplate />}>

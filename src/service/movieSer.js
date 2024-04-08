@@ -17,4 +17,11 @@ export const movieSer = {
     let uri = `/api/QuanLyRap/LayThongTinLichChieuPhim?MaPhim=${idMovie}`;
     return http.get(uri);
   },
+  getListGhe: (maLichChieu) => {
+    let uri = `/api/QuanLyDatVe/LayDanhSachPhongVe?MaLichChieu=${maLichChieu}`;
+    return http.get(uri);
+  },
 };
+
+//  "" , NaN , undefined , null , false , 0
+// {},[]

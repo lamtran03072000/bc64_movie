@@ -75,3 +75,6 @@ const ListMoive = () => {
 };
 
 export default ListMoive;
+
+// Tài liệu ôn pv
+// 1 phần của tyscript
